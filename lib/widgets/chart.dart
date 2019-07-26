@@ -24,8 +24,8 @@ class Chart extends StatelessWidget {
           totalSum += recentTransactions[i].amount;
         }
       }
-      print(totalSum);
-      print(weekDay);
+      // print(totalSum);
+      // print(weekDay);
       return {
         'day': DateFormat.E().format(weekDay).substring(0, 2),
         'amount': totalSum,
@@ -41,7 +41,7 @@ class Chart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(groupedTransaction);
+    // print(groupedTransaction);
     return Card(
       elevation: 6,
       margin: EdgeInsets.all(20),
